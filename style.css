@@ -1,0 +1,36 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    height: 70px; 
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.header span {
+    font-size: 30px;
+}
+
+.qrcode {
+    padding-top:50px;
+    text-align: center;
+}
+
+.qrcode img {
+    width: 80%;
+}
+
+.instruction img {
+    width: 50px;
+    padding: 10px;
+}
