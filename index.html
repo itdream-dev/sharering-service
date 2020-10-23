@@ -76,7 +76,7 @@
                             <p>SHR Address:</p>
                         </div>
                         <div class="col-8">
-                            <p class="address">shareledger1wlygpu0pd0fwc6wx907dd72vfmt5mqgktq4y0x</p>
+                            <p class="wallet_address">shareledger1wlygpu0pd0fwc6wx907dd72vfmt5mqgktq4y0x</p>
                         </div>
                     </div>     
                     <div class="row">
@@ -94,7 +94,23 @@
                         <div class="col-8">
                             <p class="onfido_hash">761cda0002f6a78202991def942b4c11e2d1dd1d66a1c7d607e3c6864c2896b2</p>
                         </div>
-                    </div>                           
+                    </div>    
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Address:</p>
+                        </div>
+                        <div class="col-8">
+                            <p class="address"></p>
+                        </div>
+                    </div>         
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Phone:</p>
+                        </div>
+                        <div class="col-8">
+                            <p class="phone"></p>
+                        </div>
+                    </div>                         
                 </div>                                        
             </div>
         </div> 
@@ -103,9 +119,11 @@
                 console.log('onSignin', data);
                 $('.name').html(data.name)
                 $('.email').html(data.email)                
-                $('.address').html(data.address)
+                $('.wallet_address').html(data.wallet_address)
                 $('.balance').html(data.balance)
                 $('.onfido_hash').html(data.onfido_hash)
+                $('.phone').html(data.phone)
+                $('.address').html(data.address)
                 $('.login-section').hide();
                 $('.home').show();
             }
