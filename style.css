@@ -1,23 +1,46 @@
 body {
-    background-color: grey;
+    background-color: #FFF;
 }
 
-.container {    
-    background-color: white;
-    padding: 0px;
+.container {
+    background-color: #FFF;
+    padding: 0;
+    border-radius: 4px;
+    width: 90%;
 }
 
 .header {
-    background-color: #4CAF50;
-    color: white;
-    height: 70px; 
+    background-color: #238CFD;
+    color: #FFF;
+    height: 370px;
     width: 100%;
     text-align: center;
     padding: 10px;
+    z-index: -2;
+}
+.header-section {
+    position: relative;
+    padding-top: 36px;
+    background: #238CFD;
+}
+.header p {
+    font-size: 38px;
+    font-weight: 600;
 }
 
-.header span {
-    font-size: 30px;
+.login-section {
+    background: #FFF;
+    margin-top: -220px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 2px #DEDEDE;    
+}
+
+.home {
+    background: #FFF;
+    margin-top: -220px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 2px #DEDEDE;
+    padding-bottom: 50px;
 }
 
 .qrcode {
@@ -26,10 +49,17 @@ body {
 }
 
 .qrcode img {
-    width: 80%;
+    width: 60%;
 }
 
 .instruction img {
     width: 50px;
     padding: 10px;
+}
+.logo {
+    position: absolute;
+    left: -20px;
+    margin-top: 8px;
+    width: 200px;
+    height: 45px;
 }
