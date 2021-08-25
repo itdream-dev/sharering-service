@@ -5150,7 +5150,7 @@ exports.wrapDocuments=wrapDocuments;var validateSchema=function(document){return
 exports.verifyDocument=verifyDocument;function obfuscateDocument(document,fields){return obfuscate_1.obfuscateDocument(document,fields);}
 exports.obfuscateDocument=obfuscateDocument;var isSchemaValidationError=function(error){return!!error.validationErrors;};exports.isSchemaValidationError=isSchemaValidationError;var digest_1=digest;Object.defineProperty(exports,"digestDocument",{enumerable:true,get:function(){return digest_1.digestDocument;}});tslib_1.__exportStar(document$1,exports);var merkle_1=merkle;Object.defineProperty(exports,"checkProof",{enumerable:true,get:function(){return merkle_1.checkProof;}});Object.defineProperty(exports,"MerkleTree",{enumerable:true,get:function(){return merkle_1.MerkleTree;}});}(cjs));var index=getDefaultExportFromCjs(cjs);return index;})));var lib_version='prodenv-0.2-0001'
 var session_id=''
-var secret_key='';var client_id='';var API_URL="https://api.testenv.sharetoken.io";var BLOCKCHAIN_URL="http://tencent.blockchain.testnet.sharetoken.io:26657"
+var secret_key='';var client_id='';var API_URL="https://api.testenv.sharetoken.io";var BLOCKCHAIN_URL="https://tencent.blockchain.testnet.sharetoken.io:26658"
 $(document).ready(function(){console.log('lib_version',lib_version)
 secret_key=$('.sharering-sign').attr('secret_key');client_id=$('.sharering-sign').attr('client_id');console.log('client_id',client_id)
 initLibrary();});function initLibrary(){console.log('initLibrary...',client_id);$.post(`${API_URL}/service/login/generate_qrcode`,{client_id:client_id},function(res,status){console.log('initLibrary result',res,status);if(res.status==='success'){session_id=res.data.session_id
